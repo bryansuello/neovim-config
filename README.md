@@ -55,9 +55,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
+~~~
 
-SOURCE YOUR PLUGINS
-Add the following line to init.vim
+### source the plugins
+* add the following line to init.vim
+~~~
 source $HOME/.config/nvim/vim-plug/plugins.vim
-
 ~~~
