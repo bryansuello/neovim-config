@@ -1,4 +1,5 @@
 # neovim-config
+![](https://github.com/bryansuello/neovim-config/blob/main/Screenshot%20from%202022-06-01%2017-15-58.png?raw=true)
 
 ## commands
 ~~~
