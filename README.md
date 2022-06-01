@@ -60,5 +60,5 @@ call plug#end()
 ### source the plugins
 * add the following line to init.vim
 ~~~
-source $HOME/.config/nvim/vim-plug/plugins.vim
+$HOME/.config/nvim/vim-plug/plugins.vim
 ~~~
