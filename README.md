@@ -1,34 +1,42 @@
 # neovim-config
 
+## commands
+~~~
 :PlugStatus  -check status of plugins
 :PlugInstall  -install plugins
 :PlugUpdate  -update plugins
 :PlugDiff -after update press d to see the differences or run
 :PlugClean  -To remove plugins that are no longer defined in the plugins.vim file
 :PlugUpgrade -uprade vim-plug itself
-
 ~~~
-### HOW THIS WORKED:
+## how this works
 
-Make directory for your Neovim config
+### make directory for your Neovim config
+~~~
 mkdir ~/.config/nvim
+~~~
 
-Create an init.vim file
+### create an init.vim file
+~~~
 touch ~/.config/nvim/init.vim
+~~~
 
-INSTALL vim-plug
+### install vim-plug
+~~~
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-*should now have the plug.vim in autoload directory so it will load of on start.
+~~~
+* should now have the plug.vim in autoload directory so it will load of on start
 
-
-ADD A NEW FILE FOR PLUGINS
-We will manage our plugins in a separate file for the sake of my own sanity
+### add a new file for plugins
+* manage plugins in a separate file to make them easier to find and change
+~~~
 mkdir ~/.config/nvim/vim-plug
 touch ~/.config/nvim/vim-plug/plugins.vim
+~~~
 
-
-ADD THE PLUGINS:
-Add the following to ~/.config/nvim/vim-plug/plugins.vim
+### add the plugins
+* add the following to ~/.config/nvim/vim-plug/plugins.vim
+~~~
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
